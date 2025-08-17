@@ -1,0 +1,9 @@
+C:\Users\ricoa\Desktop\NoteApp.pdb
+C:\Users\ricoa\Desktop\NoteApp.dll.config
+C:\Users\ricoa\Desktop\D3DCompiler_47_cor3.dll
+C:\Users\ricoa\Desktop\PenImc_cor3.dll
+C:\Users\ricoa\Desktop\PresentationNative_cor3.dll
+C:\Users\ricoa\Desktop\vcruntime140_cor3.dll
+C:\Users\ricoa\Desktop\wpfgfx_cor3.dll
+C:\Users\ricoa\Desktop\e_sqlite3.dll
+C:\Users\ricoa\Desktop\NoteApp.exe
