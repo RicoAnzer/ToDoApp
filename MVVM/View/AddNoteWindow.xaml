@@ -9,7 +9,7 @@
         xmlns:viewModel="clr-namespace:NoteApp.MVVM.ViewModel"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="AddNoteWindow" Height="450" Width="385">
+        Title="New note" Height="450" Width="385">
 
 
     <Window.DataContext>

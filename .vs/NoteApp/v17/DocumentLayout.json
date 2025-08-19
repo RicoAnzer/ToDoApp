@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ricoa\\source\\NoteApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\addnotewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\icons\\trashcan.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\icons\\trashcan.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -99,7 +99,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 249,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NoteListWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
@@ -131,14 +131,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "NoteListWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
               "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:42:26.491Z"
+              "WhenOpened": "2025-08-05T13:42:26.491Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -166,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddNoteWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml",
@@ -178,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TrashCan.png - PNG [55x64, 32-Bit, PNG]",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\Icons\\TrashCan.png",
               "RelativeDocumentMoniker": "MVVM\\View\\Icons\\TrashCan.png",
