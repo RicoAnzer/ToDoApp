@@ -79,7 +79,8 @@
                   VerticalGridLinesBrush="#FFC3C2C2"
                   AutoGenerateColumns="False"
                   ScrollViewer.CanContentScroll="True"
-                  ScrollViewer.VerticalScrollBarVisibility="Visible">
+                  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  Sorting="DataGridHeaderSort">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ID}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 

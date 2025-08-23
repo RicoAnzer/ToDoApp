@@ -10,8 +10,6 @@ namespace NoteApp.MVVM.Services
 {
     internal interface ILocalizationService
     {
-        //Instance of localizationService
-        public static LocalizationService? Instance { get; private set; }
         //Manages access to resource files
         private static ResourceManager? _resourceManager;
         //Contains information of current language

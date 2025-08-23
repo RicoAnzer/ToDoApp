@@ -7,7 +7,7 @@ Author: Rico Anzer
 */
 namespace NoteApp.MVVM.Model
 {
-    partial class Note : ObservableObject
+    public partial class Note : ObservableObject
     {
         //Individual ID
         [ObservableProperty]

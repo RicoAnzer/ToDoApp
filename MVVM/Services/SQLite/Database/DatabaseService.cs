@@ -15,12 +15,29 @@ namespace NoteApp.MVVM.Services.SQLite.Database
 {
     class DatabaseService : IDatabaseService
     {
+        //Instance of this Service
+        public static DatabaseService? Instance { get; private set; }
+        //Instance of LocalizationService
+        public static LocalizationService? _localizationService;
+
         //Name of database defined in App.config
         private static string dbName = ConfigurationManager.AppSettings["dbName"]!;
         //Path to workingDirectory
         private static string workingDirectory = Path.GetDirectoryName(Environment.ProcessPath)!.Split("\\bin")[0];
         //Path to database => combining Path of working directory and Path inside working directory defined in App.config
         private static string dbPath = workingDirectory + ConfigurationManager.AppSettings["dbPath"];
+
+        public string HighPriority => _localizationService!.GetString("PriorityHigh");
+        public string MediumPriority => _localizationService!.GetString("PriorityMedium");
+        public string LowPriority => _localizationService!.GetString("PriorityLow");
+
+        //Constructor
+        public DatabaseService()
+        {
+            Instance = this;
+            //Use same instance of LocalizationService as NoteListWIndow for same translations
+            _localizationService = new LocalizationService();
+        }
 
         //Create database if it doesn't exist, open database if it does
         public void InitializeDatabase()
@@ -46,8 +63,25 @@ namespace NoteApp.MVVM.Services.SQLite.Database
         }
 
         //Add new note to database
-        public void AddData(string description, string priority, string dueDate)
+        public void AddData(string description, string priority, string date)
         {
+            string newPrio = "";
+
+            //Save Priority in single format, regardless of used language
+            //=> Allows later back translation
+            if (priority == HighPriority)
+            {
+                newPrio = "HighPriority";
+            }
+            else if (priority == MediumPriority)
+            {
+                newPrio = "MediumPriority";
+            }
+            else if (priority == LowPriority)
+            {
+                newPrio = "LowPriority";
+            }
+
             using (var db = new SqliteConnection($"Filename={dbPath + @"\" + dbName}"))
             {
                 //Open database
@@ -59,8 +93,8 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                 //Use parameterized query to prevent SQL injection attacks
                 insertCommand.CommandText = "INSERT INTO Notes (Description, Priority, DueDate) VALUES (@Desc, @Prio, @Date);";
                 insertCommand.Parameters.AddWithValue("@Desc", description);
-                insertCommand.Parameters.AddWithValue("@Prio", priority);
-                insertCommand.Parameters.AddWithValue("@Date", dueDate);
+                insertCommand.Parameters.AddWithValue("@Prio", newPrio);
+                insertCommand.Parameters.AddWithValue("@Date", date);
 
                 //Error handling: If entry is empty => Error
                 try
@@ -68,15 +102,15 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                     //Execute AddData command
                     insertCommand.ExecuteReader();
                 }
-                catch(InvalidOperationException)
+                catch (InvalidOperationException)
                 {
                     Debug.WriteLine("Error: Description, Priority and Date must be set");
                 }
-   
             }
         }
 
-        //Fill NoteList with all notes in db
+        //Rebuild NoteList with all notes in db
+        //=> Shows content of notes in UI
         public void InitializeNoteList()
         {
             using (var db = new SqliteConnection($"Filename={dbPath + @"\" + dbName}"))
@@ -89,14 +123,31 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                     ("SELECT rowid, * FROM Notes", db);
 
                 SqliteDataReader query = selectCommand.ExecuteReader();
-               
+
                 //For each entry, extract description, priority and creationDate and fill NoteList in NoteListWindowViewModel
                 while (query.Read())
                 {
+                    string priority = "";
+                    //Uses Priority in same format as AddData()
+                    //=> Allows translation of all Priorities in same language, regardless which language was used to write note
+                    //For example: If notes were written while English language was selected, once German is chosen,
+                    //Priorities are getting translation in German as well
+                    switch (query.GetString(2))
+                    {
+                        case "HighPriority":
+                            priority = HighPriority;
+                            break;
+                        case "MediumPriority":
+                            priority = MediumPriority;
+                            break;
+                        case "LowPriority":
+                            priority = LowPriority;
+                            break;
+                    }
+
                     ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
-                    Note note = new Note(query.GetInt32(0), query.GetString(1), query.GetString(2), query.GetString(3));
+                    Note note = new Note(query.GetInt32(0), query.GetString(1), priority, query.GetString(3));
                     noteList.Add(note);
-                   
                 }
             }
         }
@@ -123,7 +174,7 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                 createNewTableCommand.Connection = db;
                 dropOldTableCommand.Connection = db;
                 renameTableCommand.Connection = db;
-                
+
                 //Use parameterized query to prevent SQL injection attacks
                 deleteCommand.CommandText = "DELETE FROM Notes WHERE rowid = @ID;";
                 deleteCommand.Parameters.AddWithValue("@ID", id);
@@ -132,13 +183,22 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                 createNewTableCommand.CommandText = "CREATE TABLE newNotes AS SELECT * FROM Notes;";
                 dropOldTableCommand.CommandText = "DROP TABLE NOTES;";
                 renameTableCommand.CommandText = "ALTER TABLE newNotes RENAME TO Notes;";
-              
+
                 deleteCommand.ExecuteReader();
                 createNewTableCommand.ExecuteReader();
                 dropOldTableCommand.ExecuteReader();
                 renameTableCommand.ExecuteReader();
-                
             }
+        }
+
+        //Recreates noteList to update notes, if their content changed
+        public void updateDatabase()
+        {
+            ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
+            //Delete old information
+            noteList.Clear();
+            //Recreate NoteList with updated information of notes
+            InitializeNoteList();
         }
     }
 }

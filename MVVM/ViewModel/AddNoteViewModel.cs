@@ -16,7 +16,7 @@ Author: Rico Anzer
 */
 namespace NoteApp.MVVM.ViewModel
 {
-    partial class AddNoteViewModel : ObservableObject, INotifyDataErrorInfo
+    public partial class AddNoteViewModel : ObservableObject, INotifyDataErrorInfo
     {
         //Instance of WindowsService
         private readonly WindowService _windowService;
@@ -63,7 +63,8 @@ namespace NoteApp.MVVM.ViewModel
             //Initialize services
             Instance = this;
             _windowService = new WindowService();
-            _databaseService = new DatabaseService();
+            //_databaseService = new DatabaseService();
+            _databaseService = DatabaseService.Instance!;
             //Use same instance of LocalizationService as NoteListWIndow for same translations
             _localizationService = NoteListWindowViewModel._localizationService!;
 
@@ -141,6 +142,7 @@ namespace NoteApp.MVVM.ViewModel
         {
             //Clear past errors
             RemoveError(nameof(TextBoxContent), DescNoTextError);
+            RemoveError(nameof(TextBoxContent), DescMaxLengthError);
 
             //Check if Description contains characters
             if (string.IsNullOrWhiteSpace(TextBoxContent))

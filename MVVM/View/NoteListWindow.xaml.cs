@@ -1,42 +1,35 @@
-﻿using NoteApp.MVVM.Model;
+﻿using NoteApp.MVVM.Services;
 using NoteApp.MVVM.ViewModel;
+using System.Diagnostics;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace NoteApp.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NoteListWindow.xaml
     /// </summary>
-    public partial class NoteListWindow : Window
+    partial class NoteListWindow : Window
     {
+        //Instance of LocalizationService
+        public static LocalizationService? _localizationService;
+
+        //Priority Strings for custom sorting logic
+        public string highPriority => _localizationService!.GetString("PriorityHigh");
+        public string mediumPriority => _localizationService!.GetString("PriorityMedium");
+        public string lowPriority => _localizationService!.GetString("PriorityLow");
+
         public NoteListWindow()
-        {  
+        {
             InitializeComponent();
+            //Initialize services
+            _localizationService = NoteListWindowViewModel._localizationService!;
         }
 
-        private void Image_SizeChanged(object sender, SizeChangedEventArgs e)
+        //Custom Sorting 
+        private void DataGridHeaderSort(object sender, DataGridSortingEventArgs e)
         {
-
-        }
-
-        private void NoteListMenu_SelectionChanged()
-        {
-
-        }
-
-        private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void Image_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void ChangeLangPopup_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-
+            Debug.WriteLine(highPriority);
         }
     }
 }

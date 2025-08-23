@@ -9,7 +9,7 @@ Author: Rico Anzer
 */
 namespace NoteApp.MVVM.Model
 {
-    partial class Languages
+    public partial class Languages
     {
         public string Lang { get; set; }
         public string IconPath { get; set; }

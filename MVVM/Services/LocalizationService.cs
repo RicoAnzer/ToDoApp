@@ -10,8 +10,6 @@ namespace NoteApp.MVVM.Services
 {
     public partial class LocalizationService: ILocalizationService
     {
-        //Instance of localizationService
-        public static LocalizationService? Instance { get; private set; }
         //Manages access to resource files
         private ResourceManager _resourceManager;
         //Contains information of current language
@@ -20,7 +18,6 @@ namespace NoteApp.MVVM.Services
         //Constructor
         public LocalizationService() 
         {
-            Instance = this;
             //Define resource files
             _resourceManager = new ResourceManager("NoteApp.MVVM.Services.LanguageFiles.Strings", typeof(LocalizationService).Assembly);
             _currentCulture = CultureInfo.CurrentCulture;

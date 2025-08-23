@@ -16,14 +16,14 @@ Author: Rico Anzer
 */
 namespace NoteApp.MVVM.ViewModel
 {
-    partial class NoteListWindowViewModel : ObservableObject
+    public partial class NoteListWindowViewModel : ObservableObject
     {
         //Instance of WindowsService
         private readonly WindowService _windowService;
         //Instance of DatabaseService
         private readonly DatabaseService _databaseService;
         //Instance of LocalizationService
-        public static LocalizationService? _localizationService = LocalizationService.Instance;
+        public static LocalizationService? _localizationService;
         //Instance of AddNoteViewModel
         public static AddNoteViewModel? _AddNoteViewModel;
 
@@ -61,6 +61,9 @@ namespace NoteApp.MVVM.ViewModel
         public string DescHeader => _localizationService!.GetString("HeaderDescription");
         public string PriorityHeader => _localizationService!.GetString("HeaderPriority");
         public string DueDateHeader => _localizationService!.GetString("HeaderDueDate");
+        public string HighPriority => _localizationService!.GetString("PriorityHigh");
+        public string MediumPriority => _localizationService!.GetString("PriorityMedium");
+        public string LowPriority => _localizationService!.GetString("PriorityLow");
 
         //Constructor
         public NoteListWindowViewModel()
@@ -69,8 +72,8 @@ namespace NoteApp.MVVM.ViewModel
             Instance = this;
             _AddNoteViewModel = AddNoteViewModel.Instance!;
             _windowService = new WindowService();
-            _databaseService = new DatabaseService();
-            _localizationService = new LocalizationService();
+            _databaseService = DatabaseService.Instance!;
+            _localizationService = DatabaseService._localizationService;
 
             //Initialize selected Languages Object
             SelectedLang = null!;
@@ -88,8 +91,8 @@ namespace NoteApp.MVVM.ViewModel
 
             //Example entries to populate NoteList without DB
             //=> Use those as example entries inside xaml viewer of VisualStudio
-            //NoteList.Add(new Note(1, "test", "high", DateTime.Now.ToString("dd.MM.yyyy")));
-            //NoteList.Add(new Note(2, "Zweiter Test", "high", DateTime.Now.ToString("dd.MM.yyyy")));
+            //NoteList.Add(new Note(1, "test", _databaseService.HighPriority, DateTime.Now.ToString("dd.MM.yyyy")));
+            //NoteList.Add(new Note(2, "Zweiter Test", _databaseService.HighPriority, DateTime.Now.ToString("dd.MM.yyyy")));
         }
 
         //Open new AddNote Window
@@ -97,6 +100,16 @@ namespace NoteApp.MVVM.ViewModel
         private void OpenAddNoteWin()
         {
             _windowService.OpenWindow(new AddNoteWindow());
+        }
+
+        //Deletes current Note
+        [RelayCommand]
+        private void RemoveNote(Note note)
+        {
+            _databaseService.RemoveData(note.ID);
+            //Reload database
+            NoteList.Clear();
+            _databaseService.InitializeNoteList();
         }
 
         //Search for all lang files and Icons and fill LangList
@@ -134,24 +147,9 @@ namespace NoteApp.MVVM.ViewModel
             OnPropertyChanged(nameof(DescHeader));
             OnPropertyChanged(nameof(PriorityHeader));
             OnPropertyChanged(nameof(DueDateHeader));
-            //Change texts for AddNoteWindow
-            OnPropertyChanged(nameof(_AddNoteViewModel.HighPriority));
-            OnPropertyChanged(nameof(_AddNoteViewModel.MediumPriority));
-            OnPropertyChanged(nameof(_AddNoteViewModel.LowPriority));
-            OnPropertyChanged(nameof(_AddNoteViewModel.NoteDesc));
-            OnPropertyChanged(nameof(_AddNoteViewModel.NotePrio));
-            OnPropertyChanged(nameof(_AddNoteViewModel.CancelNote));
-            OnPropertyChanged(nameof(_AddNoteViewModel.SaveNote));
-        }
 
-        //Deletes current Note
-        [RelayCommand]
-        private void RemoveNote(Note note) 
-        {
-            _databaseService.RemoveData(note.ID);
-            //Reload database
-            NoteList.Clear();
-            _databaseService.InitializeNoteList();
-        }
+            //Update Database after language was changed
+            _databaseService.updateDatabase();
+        }     
     }
 }
