@@ -1,8 +1,8 @@
 ﻿/**
-Languages Class for in Note-App
+Languages Class for Note-App
 Languages can be switched using a comboBox
-Adding Languages should be dynamically 
-=> only adding new file to LanguageFile folder and Icon to Icons folder necessary
+Adding Languages is dynamically 
+=> only adding new res file to LanguageFile folder and Icon of equal name to Icons folder necessary
 Language object contains name shortcut and path to Icon
 => Training Exercise
 Author: Rico Anzer

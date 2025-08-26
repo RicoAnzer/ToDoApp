@@ -4,6 +4,7 @@ using NoteApp.MVVM.ViewModel;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 
 /**
@@ -13,7 +14,7 @@ Author: Rico Anzer
 */
 namespace NoteApp.MVVM.Services.SQLite.Database
 {
-    class DatabaseService : IDatabaseService
+   public class DatabaseService : IDatabaseService
     {
         //Instance of this Service
         public static DatabaseService? Instance { get; private set; }
@@ -65,9 +66,9 @@ namespace NoteApp.MVVM.Services.SQLite.Database
         //Add new note to database
         public void AddData(string description, string priority, string date)
         {
-            string newPrio = "";
+            string newPrio = string.Empty;
 
-            //Save Priority in single format, regardless of used language
+            //Save Priority in same format using palceholders, regardless of used language
             //=> Allows later back translation
             if (priority == HighPriority)
             {
@@ -111,7 +112,7 @@ namespace NoteApp.MVVM.Services.SQLite.Database
 
         //Rebuild NoteList with all notes in db
         //=> Shows content of notes in UI
-        public void InitializeNoteList()
+        public void InitializeList()
         {
             using (var db = new SqliteConnection($"Filename={dbPath + @"\" + dbName}"))
             {
@@ -124,11 +125,17 @@ namespace NoteApp.MVVM.Services.SQLite.Database
 
                 SqliteDataReader query = selectCommand.ExecuteReader();
 
-                //For each entry, extract description, priority and creationDate and fill NoteList in NoteListWindowViewModel
+                //For each entry, extract description, creationDate and priority and fill NoteList in NoteListWindowViewModel
+                //query.GetString(0) = rowId,
+                //query.GetString(1) = description
+                //query.GetString(2) = priority
+                //query.GetString(3) = date;
+
                 while (query.Read())
                 {
-                    string priority = "";
-                    //Uses Priority in same format as AddData()
+                    string priority = string.Empty;
+                    int index = 0;
+                    //Use placeholder of priority in AddData() for translation purposes
                     //=> Allows translation of all Priorities in same language, regardless which language was used to write note
                     //For example: If notes were written while English language was selected, once German is chosen,
                     //Priorities are getting translation in German as well
@@ -139,14 +146,17 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                             break;
                         case "MediumPriority":
                             priority = MediumPriority;
+                            index = 1;
                             break;
                         case "LowPriority":
                             priority = LowPriority;
+                            index = 2;
                             break;
                     }
 
                     ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
-                    Note note = new Note(query.GetInt32(0), query.GetString(1), priority, query.GetString(3));
+
+                    Note note = new Note(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
                     noteList.Add(note);
                 }
             }
@@ -192,13 +202,13 @@ namespace NoteApp.MVVM.Services.SQLite.Database
         }
 
         //Recreates noteList to update notes, if their content changed
-        public void updateDatabase()
+        public void updateList()
         {
             ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
             //Delete old information
             noteList.Clear();
             //Recreate NoteList with updated information of notes
-            InitializeNoteList();
+            InitializeList();
         }
     }
 }

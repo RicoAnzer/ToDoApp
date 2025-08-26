@@ -11,15 +11,5 @@ namespace NoteApp.MVVM.View
         {
             InitializeComponent();
         }
-
-        private void DescriptionBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
-
-        private void DescriptionBox_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
     }
 }

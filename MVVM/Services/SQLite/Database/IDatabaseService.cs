@@ -12,7 +12,7 @@ namespace NoteApp.MVVM.Services.SQLite.Database
         //Add Note to Database
         void AddData(string description, string priority, string dueDate);
         //Fill NoteList with data from Database
-        void InitializeNoteList();
+        void InitializeList();
         //Remove Note from Database
         void RemoveData(int id);
     }

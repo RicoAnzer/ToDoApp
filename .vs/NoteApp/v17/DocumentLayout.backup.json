@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ricoa\\source\\NoteApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\viewmodel\\notelistwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\viewmodel\\notelistwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\viewmodel\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\viewmodel\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\services\\sqlite\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,6 +15,18 @@
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\viewmodel\\notelistwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\viewmodel\\notelistwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\viewmodel\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\viewmodel\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -31,8 +35,24 @@
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\model\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\model\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\services\\languagefiles\\strings.de.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\services\\languagefiles\\strings.de.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\notelistwindowhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\view\\notelistwindowhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\services\\localizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,20 +63,8 @@
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\services\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\model\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\model\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E5E7B6-8A9A-4B14-9CCB-0D2E9C5CA60C}|NoteApp.csproj|c:\\users\\ricoa\\source\\noteapp\\mvvm\\view\\icons\\trashcan.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -116,76 +124,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddNoteViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\AddNoteViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\AddNoteViewModel.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\AddNoteViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\AddNoteViewModel.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAUwHsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T12:51:39.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AddNoteWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
               "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T13:26:36.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddNoteWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T12:50:22.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NoteListWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:07:05.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DatabaseService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs*",
-              "RelativeToolTip": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs*",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T14:04:03.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "IDatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
               "RelativeToolTip": "MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-12T13:23:50.353Z",
               "EditorCaption": ""
@@ -193,91 +150,128 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NoteListWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:42:26.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "NoteListWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml.cs",
               "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T13:25:19.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LocalizationService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LocalizationService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\LocalizationService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LocalizationService.cs",
-              "RelativeToolTip": "MVVM\\Services\\LocalizationService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADgvwsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T13:43:00.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ILocalizationService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\ILocalizationService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\ILocalizationService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\ILocalizationService.cs",
-              "RelativeToolTip": "MVVM\\Services\\ILocalizationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T14:09:05.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Languages.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Model\\Languages.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\Languages.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Model\\Languages.cs",
               "RelativeToolTip": "MVVM\\Model\\Languages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T13:22:04.276Z"
+              "WhenOpened": "2025-08-14T13:22:04.276Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "AddNoteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\AddNoteViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\AddNoteViewModel.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\AddNoteViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\AddNoteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T12:51:39.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NoteListWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T13:07:05.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoteListWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindow.xaml",
+              "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-05T13:42:26.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddNoteWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\AddNoteWindow.xaml",
+              "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-31T12:50:22.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
+              "RelativeToolTip": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAADwv50AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T14:04:03.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Note.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Model\\Note.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\Note.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Model\\Note.cs",
               "RelativeToolTip": "MVVM\\Model\\Note.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T13:22:13.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T13:43:49.75Z"
+              "DocumentIndex": 10,
+              "Title": "Strings.de.resx",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "RelativeToolTip": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwD0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-08-26T08:24:28.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
+              "Title": "NoteListWindowHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindowHelpers.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindowHelpers.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\NoteListWindowHelpers.cs",
+              "RelativeToolTip": "MVVM\\View\\NoteListWindowHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T19:15:41.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -289,7 +283,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LocalizationService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LocalizationService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\LocalizationService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LocalizationService.cs",
+              "RelativeToolTip": "MVVM\\Services\\LocalizationService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvwsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T13:43:00.935Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "ILocalizationService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\ILocalizationService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\ILocalizationService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\ILocalizationService.cs",
+              "RelativeToolTip": "MVVM\\Services\\ILocalizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T14:09:05.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T13:43:49.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "TrashCan.png - PNG [55x64, 32-Bit, PNG]",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\View\\Icons\\TrashCan.png",
               "RelativeDocumentMoniker": "MVVM\\View\\Icons\\TrashCan.png",
@@ -301,19 +331,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\Users\\ricoa\\source\\NoteApp\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:43:48.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T13:43:48.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -325,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "IWindowService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\IWindowService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\IWindowService.cs",
@@ -337,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -349,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "WindowService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\WindowService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\WindowService.cs",
@@ -361,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "NoteAppTests.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\repos\\NoteAppTest\\NoteAppTests.cs",
               "RelativeDocumentMoniker": "..\\repos\\NoteAppTest\\NoteAppTests.cs",
@@ -372,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Strings.de.resx",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
               "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
@@ -383,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Strings.en.resx",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\NoteApp\\MVVM\\Services\\LanguageFiles\\Strings.en.resx",
               "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.en.resx",
@@ -394,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\7df9853317a222a2c3aca718c5a2c24d22bbe3c8d3e4f82866cb1b8bc00db44a\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7df9853317a222a2c3aca718c5a2c24d22bbe3c8d3e4f82866cb1b8bc00db44a\\XamlReader.cs",
@@ -406,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Helper.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\551463a92e0b6c986a6afcdc6e5044e9be2f2d43752815b5677ef9f2319d9667\\Helper.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\551463a92e0b6c986a6afcdc6e5044e9be2f2d43752815b5677ef9f2319d9667\\Helper.cs",

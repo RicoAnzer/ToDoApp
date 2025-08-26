@@ -82,7 +82,7 @@
                   ScrollViewer.VerticalScrollBarVisibility="Visible"
                   Sorting="DataGridHeaderSort">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding ID}" 
+                <DataGridTextColumn Binding="{Binding Id}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
                                     ElementStyle="{StaticResource CenterGridRowStyle}"
                                     Width="1*" Foreground="Black">
@@ -118,7 +118,7 @@
                         </DataTemplate>
                     </DataGridTextColumn.HeaderTemplate>
                 </DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding DueDate}" 
+                <DataGridTextColumn Binding="{Binding Date}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
                                     ElementStyle="{StaticResource CenterGridRowStyle}" 
                                     Width="1.5*">

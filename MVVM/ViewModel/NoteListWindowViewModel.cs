@@ -6,7 +6,6 @@ using NoteApp.MVVM.Services.SQLite.Database;
 using NoteApp.MVVM.View;
 using System.Collections.ObjectModel;
 using System.Configuration;
-using System.Diagnostics;
 using System.IO;
 
 /**
@@ -87,7 +86,7 @@ namespace NoteApp.MVVM.ViewModel
 
             //Populate NoteList using entries from DB
             //=> To be able to use xaml viewer inside VisualStudio, comment out _databaseService.InitializeNoteList()
-            _databaseService.InitializeNoteList();
+            _databaseService.InitializeList();
 
             //Example entries to populate NoteList without DB
             //=> Use those as example entries inside xaml viewer of VisualStudio
@@ -106,10 +105,10 @@ namespace NoteApp.MVVM.ViewModel
         [RelayCommand]
         private void RemoveNote(Note note)
         {
-            _databaseService.RemoveData(note.ID);
+            _databaseService.RemoveData(note.Id);
             //Reload database
             NoteList.Clear();
-            _databaseService.InitializeNoteList();
+            _databaseService.InitializeList();
         }
 
         //Search for all lang files and Icons and fill LangList
@@ -149,7 +148,7 @@ namespace NoteApp.MVVM.ViewModel
             OnPropertyChanged(nameof(DueDateHeader));
 
             //Update Database after language was changed
-            _databaseService.updateDatabase();
+            _databaseService.updateList();
         }     
     }
 }

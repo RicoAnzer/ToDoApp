@@ -11,24 +11,29 @@ namespace NoteApp.MVVM.Model
     {
         //Individual ID
         [ObservableProperty]
-        private int iD;
+        private int id;
         //Description for activity to do
         [ObservableProperty]
         private string? description;
         //Date of creation of note
         [ObservableProperty]
-        private string? dueDate;
-        //Assigned priority of note
+        private string? date;
+        //Priority (High, Medium, Low) for display in UI
         [ObservableProperty]
-        private string priority;
+        string priority;
+        //Index of above priority (High - 0, Medium - 1, Low - 2) for sorting
+        [ObservableProperty]
+        int priorityIndex;
 
         //Constructor
-        public Note(int _id, string? _description, string _priority, string _dueDate)
+        public Note(int _id, string? _description, string _date, string _priority, int _priorityIndex)
         {
-            iD = _id;
+            Id = _id;
             Description = _description;
-            Priority = _priority!;
-            DueDate = _dueDate;
+            Date = _date;
+            Priority = _priority;
+            PriorityIndex = _priorityIndex;
+            
         }
     }
 }

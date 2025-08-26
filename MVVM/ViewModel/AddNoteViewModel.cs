@@ -102,9 +102,8 @@ namespace NoteApp.MVVM.ViewModel
             {
                 //Add new note to database
                 _databaseService.AddData(TextBoxContent!, SelectedPriority!, CalendarDate.ToString("dd.MM.yyyy"));
-                //Reload database
-                NoteListWindowViewModel.Instance!.NoteList.Clear();
-                _databaseService.InitializeNoteList();
+                //Update UI
+                _databaseService.updateList();
                 //Close window
                 CloseWindow();
             }
