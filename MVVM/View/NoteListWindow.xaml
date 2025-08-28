@@ -80,12 +80,14 @@
                   AutoGenerateColumns="False"
                   ScrollViewer.CanContentScroll="True"
                   ScrollViewer.VerticalScrollBarVisibility="Visible"
-                  Sorting="DataGridHeaderSort">
+                  Sorting="DataGridHeaderSort"
+                  CellEditEnding="DataGridCellEdit">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
                                     ElementStyle="{StaticResource CenterGridRowStyle}"
-                                    Width="1*" Foreground="Black">
+                                    Width="1*" Foreground="Black"
+                                    IsReadOnly="True">
                     <DataGridTextColumn.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DataContext.IdHeader, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
@@ -93,8 +95,7 @@
                     </DataGridTextColumn.HeaderTemplate>
                 </DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding Description}" 
-                                    Width="10*"
-                                    >
+                                    Width="10*">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -111,7 +112,8 @@
                 <DataGridTextColumn Binding="{Binding Priority}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
                                     ElementStyle="{StaticResource CenterGridRowStyle}" 
-                                    Width="1.5*">
+                                    Width="1.5*"
+                                    IsReadOnly="True">
                     <DataGridTextColumn.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DataContext.PriorityHeader, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
@@ -121,7 +123,8 @@
                 <DataGridTextColumn Binding="{Binding Date}" 
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
                                     ElementStyle="{StaticResource CenterGridRowStyle}" 
-                                    Width="1.5*">
+                                    Width="1.5*"
+                                    IsReadOnly="True">
                     <DataGridTextColumn.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DataContext.DueDateHeader, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
@@ -130,7 +133,8 @@
                 </DataGridTextColumn>
                 <DataGridTemplateColumn
                                     HeaderStyle="{StaticResource CenterGridHeaderStyle}" 
-                                    Width="1*">
+                                    Width="1*"
+                                    IsReadOnly="True">
                     <DataGridTemplateColumn.Header>
                         <TextBlock/>
                     </DataGridTemplateColumn.Header>

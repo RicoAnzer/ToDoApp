@@ -107,8 +107,7 @@ namespace NoteApp.MVVM.ViewModel
         {
             _databaseService.RemoveData(note.Id);
             //Reload database
-            NoteList.Clear();
-            _databaseService.InitializeList();
+            _databaseService.updateList();
         }
 
         //Search for all lang files and Icons and fill LangList

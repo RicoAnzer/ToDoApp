@@ -155,7 +155,7 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                     }
 
                     ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
-
+                    //Create and add notes to list
                     Note note = new Note(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
                     noteList.Add(note);
                 }
@@ -198,6 +198,29 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                 createNewTableCommand.ExecuteReader();
                 dropOldTableCommand.ExecuteReader();
                 renameTableCommand.ExecuteReader();
+            }
+        }
+
+        //Updating description of existing database entry
+        public void editData(int id, string description)
+        {
+            //Connect to database, create database if it doesn't exist
+            using (var db = new SqliteConnection($"Filename={dbPath + @"\" + dbName}"))
+            {
+                //Open database
+                db.Open();
+
+                //Edit database entry
+                var editCommand = new SqliteCommand();
+
+                editCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                editCommand.CommandText = "UPDATE Notes SET Description = @Desc WHERE rowid = @ID;";
+                editCommand.Parameters.AddWithValue("@ID", id);
+                editCommand.Parameters.AddWithValue("@Desc", description);
+
+                editCommand.ExecuteReader();
             }
         }
 

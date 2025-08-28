@@ -3,6 +3,8 @@ using NoteApp.MVVM.Services;
 using NoteApp.MVVM.Services.SQLite.Database;
 using NoteApp.MVVM.ViewModel;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -40,9 +42,9 @@ namespace NoteApp.MVVM.View
         {
             //Deactivate default sorting
             e.Handled = true;
+            //Custom sorting
             switch (e.Column.SortMemberPath) 
             {
-                //Custom sorting
                 case "Id":
                     sortId(_noteListWindowViewModel!.NoteList, e);
                     break;
@@ -55,8 +57,23 @@ namespace NoteApp.MVVM.View
                 case "Date":
                     sortDate(_noteListWindowViewModel!.NoteList, e);
                     break;
-                
             }     
+        }
+
+        //Edit description of existing database entry by editing description cell of DataGrid
+        private void DataGridCellEdit(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            //Access and temporarily save content of active cell (not yet saved in Note or Database)
+            TextBox? tb = new TextBox();
+            if (e.EditingElement is TextBox)
+            {
+                tb = e.EditingElement as TextBox;
+            }
+
+            //Access Note bound to row
+            Note editObj = (Note)e.EditingElement.DataContext;
+            //Edit data entry using id of bound Note and changed text of cell
+            _dataBaseService!.editData(editObj.Id, tb!.Text);
         }
 
         //Toggle sort direcrtion
@@ -80,22 +97,11 @@ namespace NoteApp.MVVM.View
 
             //Sort in ascending or descending order
             //Sort by id => sort by number (1, 2, 3...)
-            if (sortDirAsc)
-            {
-                //Sort in ascending order
-                sortedList = listToSort.OrderBy(x => x.Id)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to ascending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-            }
-            else
-            {
-                //Sort in descending order
-                sortedList = listToSort.OrderByDescending(x => x.Id)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to descending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Descending;
-            }
+            sortedList = sortDirAsc ? listToSort.OrderBy(x => x.Id)
+                                       .ToList()
+
+                                     : listToSort.OrderByDescending(x => x.Id)
+                                       .ToList();
 
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
@@ -120,23 +126,15 @@ namespace NoteApp.MVVM.View
 
             //Sort in ascending or descending order
             //Sort by description => sort by first letter, (a first, then b, then c, ...)
-            if (sortDirAsc)
-            {
-                //Sort in ascending order
-                sortedList = listToSort.OrderBy(x => x.Description)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to ascending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-            }
-            else
-            {
-                //Sort in descending order
-                sortedList = listToSort.OrderByDescending(x => x.Description)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to descending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Descending;
-            }
+            sortedList = sortDirAsc ? listToSort.OrderBy(x => x.Description)
+                                       .ToList()
 
+                                     : listToSort.OrderByDescending(x => x.Description)
+                                       .ToList();
+
+            //Change sort direction UI of Datagrid
+            e.Column.SortDirection = sortDirAsc ? ListSortDirection.Ascending : ListSortDirection.Descending;
+        
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
             foreach (Note item in sortedList)
@@ -162,10 +160,16 @@ namespace NoteApp.MVVM.View
             //First sort by priority => high - medium - low
             //then by date => newest date first
             //then by description => sort by first letter, (a first, then b, then c, ...)
-            if (sortDirAsc)
-            {
-                //Sort in ascending order
-                sortedList = listToSort.OrderBy(x => x.PriorityIndex)
+            sortedList = sortDirAsc ? listToSort.OrderBy(x => x.PriorityIndex)
+                                       .ThenByDescending(x => {
+                                           DateTime date;
+                                           DateTime.TryParse(x.Date, out date);
+                                           return date;
+                                       })
+                                       .ThenBy(x => x.Description)
+                                       .ToList()
+
+                                     : listToSort.OrderByDescending(x => x.PriorityIndex)
                                        .ThenByDescending(x => {
                                            DateTime date;
                                            DateTime.TryParse(x.Date, out date);
@@ -173,23 +177,9 @@ namespace NoteApp.MVVM.View
                                        })
                                        .ThenBy(x => x.Description)
                                        .ToList();
-                //Change sort direction UI of Datagrid to ascending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-            }
-            else 
-            {
-                //Sort in descending order
-                sortedList = listToSort.OrderByDescending(x => x.PriorityIndex)
-                                       .ThenByDescending(x => {
-                                           DateTime date;
-                                           DateTime.TryParse(x.Date, out date);
-                                           return date;
-                                       })
-                                       .ThenBy(x => x.Description)
-                                       .ToList();
-                //Change sort direction UI of Datagrid to descending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Descending;
-            }
+
+            //Change sort direction UI of Datagrid
+            e.Column.SortDirection = sortDirAsc ? ListSortDirection.Ascending : ListSortDirection.Descending;
 
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
@@ -216,35 +206,27 @@ namespace NoteApp.MVVM.View
             //First sort by date => newest date first
             //then by priority => high - medium - low
             //then by description => sort by first letter, (a first, then b, then c, ...)
-            if (sortDirAsc)
-            {
-                //Sort in ascending order
-                sortedList = listToSort.OrderByDescending(x => {
-                                           DateTime date;
-                                           DateTime.TryParse(x.Date, out date);
-                                           return date;
-                                         })
+            sortedList = sortDirAsc ? listToSort.OrderByDescending(x => {
+                                        DateTime date;
+                                        DateTime.TryParse(x.Date, out date);
+                                        return date;
+                                       })
                                         .ThenBy(x => x.Priority)
                                         .ThenBy(x => x.Description)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to ascending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-            }
-            else
-            {
-                //Sort in descending order
-                sortedList = listToSort.OrderBy(x => {
-                                            DateTime date;
-                                            DateTime.TryParse(x.Date, out date);
-                                            return date;
-                                          })
-                                        .ThenBy(x => x.Priority)
-                                        .ThenBy(x => x.Description)
-                                        .ToList();
-                //Change sort direction UI of Datagrid to descending
-                e.Column.SortDirection = System.ComponentModel.ListSortDirection.Descending;
-            }
+                                        .ToList()
 
+                                     : listToSort.OrderBy(x => {
+                                         DateTime date;
+                                         DateTime.TryParse(x.Date, out date);
+                                         return date;
+                                       })
+                                        .ThenBy(x => x.Priority)
+                                        .ThenBy(x => x.Description)
+                                        .ToList();
+
+            //Change sort direction UI of Datagrid
+            e.Column.SortDirection = sortDirAsc ? ListSortDirection.Ascending : ListSortDirection.Descending;
+            
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
             foreach (Note item in sortedList)
