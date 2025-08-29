@@ -9,9 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="MVVM\Services\SQLite\Database\NoteDB.db" />
     <None Remove="MVVM\View\Icons\de.png" />
     <None Remove="MVVM\View\Icons\en.png" />
     <None Remove="MVVM\View\Icons\TrashCan.png" />
+    <None Remove="README.md" />
   </ItemGroup>
 
 <ItemGroup>
@@ -35,6 +37,15 @@
   <Content Include="MVVM\View\Icons\TrashCan.png">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <EmbeddedResource Include="MVVM\Services\SQLite\Database\NoteDB.db">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </EmbeddedResource>
+  <EmbeddedResource Include="README.md">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </EmbeddedResource>
 </ItemGroup>
 
 <ItemGroup>

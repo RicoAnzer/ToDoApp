@@ -12,7 +12,7 @@
     <Window.DataContext>
         <viewModel:NoteListWindowViewModel/>
     </Window.DataContext>
-    
+
     <Window.Resources>
         <Style x:Key="CenterGridHeaderStyle" TargetType="DataGridColumnHeader">
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -35,7 +35,8 @@
         </Style>
     </Window.Resources>
 
-    <Grid x:Name="MenuBackground">
+    <Grid x:Name="MenuBackground"
+          MouseLeftButtonDown="DataGridDeselect">
         <Grid.RowDefinitions>
             <RowDefinition x:Name="Header" 
                            Height="1*"/>

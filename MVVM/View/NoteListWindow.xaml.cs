@@ -7,6 +7,8 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
 
 namespace NoteApp.MVVM.View
 {
@@ -37,6 +39,43 @@ namespace NoteApp.MVVM.View
             sortDirAsc = false;
         }
 
+        //Deselect active DataGrid cell after click
+        //Event is bound to Grid "MenuBackground" (background for main window), not DataGrid
+        //=> Allows event to fire whenever empty space is clicked
+        private void DataGridDeselect(object sender, MouseButtonEventArgs e)
+        {
+            if (sender != null) 
+            {    
+                //Number of children of Grid
+                int count = VisualTreeHelper.GetChildrenCount((DependencyObject?)sender);
+                //Search all children
+                for (int i = 0; i < count; i++) 
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild((DependencyObject)sender, i);
+                    //Search for DataGrid among children
+                    if (child is DataGrid)
+                    {
+                        //Convert to DataGrid for access of internal data
+                        DataGrid? grid = child as DataGrid;
+                        //If at least 1 selected row
+                        if (grid!.SelectedItems.Count > 0) 
+                        {
+                            //Number of current selected rows
+                            int selected = grid!.SelectedItems.Count;
+                            //Iterate each selected row and deselect them
+                            for (int x = 0; x < selected; x++) 
+                            {
+                                DataGridRow? row = grid!.ItemContainerGenerator.ContainerFromItem(grid.SelectedItem) as DataGridRow;
+                                row!.IsSelected = false;
+                                //If click while editing, save edit
+                                grid.CommitEdit();
+                            }       
+                        }
+                    }
+                }
+            }
+        }
+
         //Custom Sorting Event
         private void DataGridHeaderSort(object sender, DataGridSortingEventArgs e)
         {
@@ -46,16 +85,16 @@ namespace NoteApp.MVVM.View
             switch (e.Column.SortMemberPath) 
             {
                 case "Id":
-                    sortId(_noteListWindowViewModel!.NoteList, e);
+                    SortId(_noteListWindowViewModel!.NoteList, e);
                     break;
                 case "Description":
-                    sortDescription(_noteListWindowViewModel!.NoteList, e);
+                    SortDescription(_noteListWindowViewModel!.NoteList, e);
                     break;
                 case "Priority":
-                    sortPrioriy(_noteListWindowViewModel!.NoteList, e);
+                    SortPrioriy(_noteListWindowViewModel!.NoteList, e);
                     break;
                 case "Date":
-                    sortDate(_noteListWindowViewModel!.NoteList, e);
+                    SortDate(_noteListWindowViewModel!.NoteList, e);
                     break;
             }     
         }
@@ -77,7 +116,7 @@ namespace NoteApp.MVVM.View
         }
 
         //Toggle sort direcrtion
-        private void toggleSortDir(ref bool sortDir) 
+        private void ToggleSortDir(ref bool sortDir) 
         {
             sortDir = !sortDir;
         }
@@ -87,13 +126,13 @@ namespace NoteApp.MVVM.View
          * Custom sorting for id
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void sortId(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
+        private void SortId(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
         {
             //Secondary list for sorting
             List<Note> sortedList = new List<Note>();
 
             //Toggle sort direction for next sorting
-            toggleSortDir(ref sortDirAsc);
+            ToggleSortDir(ref sortDirAsc);
 
             //Sort in ascending or descending order
             //Sort by id => sort by number (1, 2, 3...)
@@ -102,6 +141,9 @@ namespace NoteApp.MVVM.View
 
                                      : listToSort.OrderByDescending(x => x.Id)
                                        .ToList();
+
+            //Change sort direction UI of Datagrid
+            e.Column.SortDirection = sortDirAsc ? ListSortDirection.Ascending : ListSortDirection.Descending;
 
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
@@ -116,13 +158,13 @@ namespace NoteApp.MVVM.View
          * Custom sorting for description
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void sortDescription(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
+        private void SortDescription(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
         {
             //Secondary list for sorting
             List<Note> sortedList = new List<Note>();
 
             //Toggle sort direction for next sorting
-            toggleSortDir(ref sortDirAsc);
+            ToggleSortDir(ref sortDirAsc);
 
             //Sort in ascending or descending order
             //Sort by description => sort by first letter, (a first, then b, then c, ...)
@@ -148,13 +190,13 @@ namespace NoteApp.MVVM.View
          * Custom sorting for priority
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void sortPrioriy(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
+        private void SortPrioriy(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
         {
             //Secondary list for sorting
             List<Note> sortedList = new List<Note>();
 
             //Toggle sort direction for next sorting
-            toggleSortDir(ref sortDirAsc);
+            ToggleSortDir(ref sortDirAsc);
 
             //Sort in ascending or descending order
             //First sort by priority => high - medium - low
@@ -194,13 +236,13 @@ namespace NoteApp.MVVM.View
          * Custom sorting for date
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void sortDate(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
+        private void SortDate(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
         {
             //Secondary list for sorting
             List<Note> sortedList = new List<Note>();
 
             //Toggle sort direction for next sorting
-            toggleSortDir(ref sortDirAsc);
+            ToggleSortDir(ref sortDirAsc);
 
             //Sort in ascending or descending order
             //First sort by date => newest date first
