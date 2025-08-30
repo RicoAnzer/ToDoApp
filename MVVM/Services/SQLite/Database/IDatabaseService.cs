@@ -1,9 +1,9 @@
 ﻿/**
-Interface for all database interactions for NoteApp
+Interface for all database interactions for ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services.SQLite.Database
+namespace ToDoApp.MVVM.Services.SQLite.Database
 {
     interface IDatabaseService
     {

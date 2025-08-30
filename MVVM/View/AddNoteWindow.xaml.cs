@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace NoteApp.MVVM.View
+namespace ToDoApp.MVVM.View
 {
     /// <summary>
     /// Interaction logic for AddNoteWindow.xaml

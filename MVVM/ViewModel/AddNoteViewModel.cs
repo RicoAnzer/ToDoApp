@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using NoteApp.MVVM.Services;
-using NoteApp.MVVM.Services.SQLite.Database;
+using ToDoApp.MVVM.Services;
+using ToDoApp.MVVM.Services.SQLite.Database;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,7 +14,7 @@ https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-w
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.ViewModel
+namespace ToDoApp.MVVM.ViewModel
 {
     public partial class AddNoteViewModel : ObservableObject, INotifyDataErrorInfo
     {

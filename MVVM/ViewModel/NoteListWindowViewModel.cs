@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using NoteApp.MVVM.Model;
-using NoteApp.MVVM.Services;
-using NoteApp.MVVM.Services.SQLite.Database;
-using NoteApp.MVVM.View;
+using ToDoApp.MVVM.Model;
+using ToDoApp.MVVM.Services;
+using ToDoApp.MVVM.Services.SQLite.Database;
+using ToDoApp.MVVM.View;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.IO;
@@ -13,7 +13,7 @@ ViewModel Class for NoteListWindow in Note-App
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.ViewModel
+namespace ToDoApp.MVVM.ViewModel
 {
     public partial class NoteListWindowViewModel : ObservableObject
     {
@@ -49,7 +49,7 @@ namespace NoteApp.MVVM.ViewModel
 
         //List containing all Notes to display
         [ObservableProperty]
-        private ObservableCollection<Note> noteList;
+        private ObservableCollection<ToDo> noteList;
         //List containing all Languages (each object has name and path to icon)
         public List<Languages> LangList { get; set; }
 
@@ -78,7 +78,7 @@ namespace NoteApp.MVVM.ViewModel
             SelectedLang = null!;
 
             //Initialize lists
-            noteList = new ObservableCollection<Note>();
+            noteList = new ObservableCollection<ToDo>();
             LangList = new List<Languages>(); 
 
             //Generate change-language menu dynamically, depending on files in Services/LanguageFile folder
@@ -103,7 +103,7 @@ namespace NoteApp.MVVM.ViewModel
 
         //Deletes current Note
         [RelayCommand]
-        private void RemoveNote(Note note)
+        private void RemoveNote(ToDo note)
         {
             _databaseService.RemoveData(note.Id);
             //Reload database

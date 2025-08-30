@@ -2,11 +2,11 @@
 using System.Resources;
 
 /**
-Changes languages in NoteApp
+Changes languages in ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services
+namespace ToDoApp.MVVM.Services
 {
     public partial class LocalizationService: ILocalizationService
     {
@@ -19,7 +19,7 @@ namespace NoteApp.MVVM.Services
         public LocalizationService() 
         {
             //Define resource files
-            _resourceManager = new ResourceManager("NoteApp.MVVM.Services.LanguageFiles.Strings", typeof(LocalizationService).Assembly);
+            _resourceManager = new ResourceManager("ToDoApp.MVVM.Services.LanguageFiles.Strings", typeof(LocalizationService).Assembly);
             _currentCulture = CultureInfo.CurrentCulture;
         }
         //Retrieves localized string for given key and current language

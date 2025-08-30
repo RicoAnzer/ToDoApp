@@ -7,7 +7,7 @@ Language object contains name shortcut and path to Icon
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Model
+namespace ToDoApp.MVVM.Model
 {
     public partial class Languages
     {

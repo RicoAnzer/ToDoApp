@@ -1,7 +1,7 @@
-﻿using NoteApp.MVVM.Model;
-using NoteApp.MVVM.Services;
-using NoteApp.MVVM.Services.SQLite.Database;
-using NoteApp.MVVM.ViewModel;
+﻿using ToDoApp.MVVM.Model;
+using ToDoApp.MVVM.Services;
+using ToDoApp.MVVM.Services.SQLite.Database;
+using ToDoApp.MVVM.ViewModel;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -10,7 +10,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace NoteApp.MVVM.View
+namespace ToDoApp.MVVM.View
 {
     /// <summary>
     /// Interaction logic for NoteListWindow.xaml
@@ -110,7 +110,7 @@ namespace NoteApp.MVVM.View
             }
 
             //Access Note bound to row
-            Note editObj = (Note)e.EditingElement.DataContext;
+            ToDo editObj = (ToDo)e.EditingElement.DataContext;
             //Edit data entry using id of bound Note and changed text of cell
             _dataBaseService!.editData(editObj.Id, tb!.Text);
         }
@@ -126,10 +126,10 @@ namespace NoteApp.MVVM.View
          * Custom sorting for id
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void SortId(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
+        private void SortId(ObservableCollection<ToDo> listToSort, DataGridSortingEventArgs e)
         {
             //Secondary list for sorting
-            List<Note> sortedList = new List<Note>();
+            List<ToDo> sortedList = new List<ToDo>();
 
             //Toggle sort direction for next sorting
             ToggleSortDir(ref sortDirAsc);
@@ -147,7 +147,7 @@ namespace NoteApp.MVVM.View
 
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
-            foreach (Note item in sortedList)
+            foreach (ToDo item in sortedList)
             {
                 listToSort.Add(item);
             }
@@ -158,10 +158,10 @@ namespace NoteApp.MVVM.View
          * Custom sorting for description
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void SortDescription(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e)
+        private void SortDescription(ObservableCollection<ToDo> listToSort, DataGridSortingEventArgs e)
         {
             //Secondary list for sorting
-            List<Note> sortedList = new List<Note>();
+            List<ToDo> sortedList = new List<ToDo>();
 
             //Toggle sort direction for next sorting
             ToggleSortDir(ref sortDirAsc);
@@ -179,7 +179,7 @@ namespace NoteApp.MVVM.View
         
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
-            foreach (Note item in sortedList)
+            foreach (ToDo item in sortedList)
             {
                 listToSort.Add(item);
             }
@@ -190,10 +190,10 @@ namespace NoteApp.MVVM.View
          * Custom sorting for priority
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void SortPrioriy(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
+        private void SortPrioriy(ObservableCollection<ToDo> listToSort, DataGridSortingEventArgs e) 
         {
             //Secondary list for sorting
-            List<Note> sortedList = new List<Note>();
+            List<ToDo> sortedList = new List<ToDo>();
 
             //Toggle sort direction for next sorting
             ToggleSortDir(ref sortDirAsc);
@@ -225,7 +225,7 @@ namespace NoteApp.MVVM.View
 
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
-            foreach (Note item in sortedList) 
+            foreach (ToDo item in sortedList) 
             {
                 listToSort.Add(item);
             }
@@ -236,10 +236,10 @@ namespace NoteApp.MVVM.View
          * Custom sorting for date
          * -------------------------------------------------------------------------------------------------------
          **/
-        private void SortDate(ObservableCollection<Note> listToSort, DataGridSortingEventArgs e) 
+        private void SortDate(ObservableCollection<ToDo> listToSort, DataGridSortingEventArgs e) 
         {
             //Secondary list for sorting
-            List<Note> sortedList = new List<Note>();
+            List<ToDo> sortedList = new List<ToDo>();
 
             //Toggle sort direction for next sorting
             ToggleSortDir(ref sortDirAsc);
@@ -271,7 +271,7 @@ namespace NoteApp.MVVM.View
             
             //Update UI list: Clear list used as ItemsSource and refill ordered items
             listToSort.Clear();
-            foreach (Note item in sortedList)
+            foreach (ToDo item in sortedList)
             {
                 listToSort.Add(item);
             }

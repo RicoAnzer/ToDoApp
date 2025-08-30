@@ -1,6 +1,6 @@
-﻿using NoteApp.MVVM.Services.SQLite.Database;
+﻿using ToDoApp.MVVM.Services.SQLite.Database;
 
-namespace NoteApp.MVVM.View
+namespace ToDoApp.MVVM.View
 {
     internal static class NoteListWindowHelpers
     {

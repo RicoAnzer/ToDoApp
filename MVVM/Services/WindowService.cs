@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 
 /**
-Open and close new windows for NoteApp
+Open and close new windows for ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services
+namespace ToDoApp.MVVM.Services
 {
     public class WindowService : IWindowService
     {

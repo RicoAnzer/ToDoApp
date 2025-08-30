@@ -1,7 +1,7 @@
-﻿<Application x:Class="NoteApp.App"
+﻿<Application x:Class="ToDoApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:NoteApp"
+             xmlns:local="clr-namespace:ToDoApp"
              StartupUri="MVVM/View/NoteListWindow.xaml">
     <Application.Resources>
        

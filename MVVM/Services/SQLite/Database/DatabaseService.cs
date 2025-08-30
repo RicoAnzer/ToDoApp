@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
-using NoteApp.MVVM.Model;
-using NoteApp.MVVM.ViewModel;
+using ToDoApp.MVVM.Model;
+using ToDoApp.MVVM.ViewModel;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
@@ -8,11 +8,11 @@ using System.Globalization;
 using System.IO;
 
 /**
-Interact with database for NoteApp
+Interact with database for ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services.SQLite.Database
+namespace ToDoApp.MVVM.Services.SQLite.Database
 {
    public class DatabaseService : IDatabaseService
     {
@@ -154,9 +154,9 @@ namespace NoteApp.MVVM.Services.SQLite.Database
                             break;
                     }
 
-                    ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
+                    ObservableCollection<ToDo> noteList = NoteListWindowViewModel.Instance!.NoteList;
                     //Create and add notes to list
-                    Note note = new Note(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
+                    ToDo note = new ToDo(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
                     noteList.Add(note);
                 }
             }
@@ -227,7 +227,7 @@ namespace NoteApp.MVVM.Services.SQLite.Database
         //Recreates noteList to update notes, if their content changed
         public void updateList()
         {
-            ObservableCollection<Note> noteList = NoteListWindowViewModel.Instance!.NoteList;
+            ObservableCollection<ToDo> noteList = NoteListWindowViewModel.Instance!.NoteList;
             //Delete old information
             noteList.Clear();
             //Recreate NoteList with updated information of notes

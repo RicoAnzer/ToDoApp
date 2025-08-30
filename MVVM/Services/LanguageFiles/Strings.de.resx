@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BtnAddNote" xml:space="preserve">
-    <value>Neue Notiz</value>
+    <value>Neue Aufgabe</value>
   </data>
   <data name="BtnCancelNote" xml:space="preserve">
     <value>Abbrechen</value>
@@ -130,7 +130,7 @@
     <value>Datum</value>
   </data>
   <data name="HeaderID" xml:space="preserve">
-    <value>ID</value>
+    <value>Nummer</value>
   </data>
   <data name="PriorityHigh" xml:space="preserve">
     <value>Hoch</value>
@@ -142,7 +142,7 @@
     <value>Mittel</value>
   </data>
   <data name="BtnSaveNote" xml:space="preserve">
-    <value>Notiz hinzufügen</value>
+    <value>Aufgabe hinzufügen</value>
   </data>
   <data name="HeaderPriority" xml:space="preserve">
     <value>Priorität</value>

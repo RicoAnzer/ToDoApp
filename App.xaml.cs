@@ -1,7 +1,7 @@
-﻿using NoteApp.MVVM.Services.SQLite.Database;
+﻿using ToDoApp.MVVM.Services.SQLite.Database;
 using System.Windows;
 
-namespace NoteApp
+namespace ToDoApp
 {
     /// <summary>
     /// Interaction logic for App.xaml

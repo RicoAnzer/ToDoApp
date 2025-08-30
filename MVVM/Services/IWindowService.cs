@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 
 /**
-Interface to open and close new windows for NoteApp
+Interface to open and close new windows for ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services
+namespace ToDoApp.MVVM.Services
 {
     interface IWindowService
     {

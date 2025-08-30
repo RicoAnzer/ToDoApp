@@ -2,11 +2,11 @@
 using System.Resources;
 
 /**
-Interface to change languages in NoteApp
+Interface to change languages in ToDoApp
 => Training Exercise
 Author: Rico Anzer
 */
-namespace NoteApp.MVVM.Services
+namespace ToDoApp.MVVM.Services
 {
     internal interface ILocalizationService
     {
