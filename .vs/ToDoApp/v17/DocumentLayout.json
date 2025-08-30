@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ricoa\\source\\ToDoApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\languagefiles\\strings.de.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\languagefiles\\strings.de.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\view\\notelistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\view\\addnotewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\view\\addnotewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\languagefiles\\strings.de.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\languagefiles\\strings.de.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\viewmodel\\notelistwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\view\\addnotewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\view\\addnotewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -115,7 +115,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 249,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -123,31 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NoteListWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:42:26.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NoteListWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAWwGkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:07:05.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IWindowService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\IWindowService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\IWindowService.cs",
@@ -159,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Strings.de.resx",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
               "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
@@ -171,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ILocalizationService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\ILocalizationService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\ILocalizationService.cs",
@@ -183,18 +159,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AddNoteWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml",
               "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml",
               "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T12:50:22.423Z"
+              "WhenOpened": "2025-07-31T12:50:22.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "AddNoteWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
+              "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:26:36.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NoteListWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindow.xaml",
+              "RelativeToolTip": "MVVM\\View\\NoteListWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-05T13:42:26.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NoteListWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\NoteListWindowViewModel.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAWwGkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T13:07:05.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NoteListWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindow.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindow.xaml.cs",
@@ -206,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ToDo.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\ToDo.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\ToDo.cs",
@@ -218,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
@@ -230,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "NoteListWindowHelpers.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\NoteListWindowHelpers.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\NoteListWindowHelpers.cs",
@@ -242,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WindowService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\WindowService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\WindowService.cs",
@@ -254,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IDatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
@@ -266,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LocalizationService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LocalizationService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\LocalizationService.cs",
@@ -278,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -290,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AddNoteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\AddNoteViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\AddNoteViewModel.cs",
@@ -299,18 +313,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T12:51:39.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AddNoteWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\View\\AddNoteWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddNoteWindow.xaml.cs",
-              "RelativeToolTip": "MVVM\\View\\AddNoteWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T13:26:36.239Z"
             },
             {
               "$type": "Document",
