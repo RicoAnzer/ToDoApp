@@ -1,11 +1,14 @@
 WPF project using VisualStudio2022
 
-Using:
+IDE:
 - VisualStudio2022
-- SQLite
+
+NuGets:
+- CommunityToolkit.Mvvm
+- Microsoft.Data.Sqlite
 
 Features:
-- Add, list and remove notes in a local database
-- Notes contain id, description, priority and date
-- Notes can be sorted by id, description, priority and date
-- Change languages between German and Englisch
+- Add, list and remove Tasks in a local database
+- Tasks contain id, description, priority and date
+- Tasks can be sorted by id, description, priority and date
+- Change languages between German and English

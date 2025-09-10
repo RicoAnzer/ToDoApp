@@ -1,7 +1,6 @@
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\View\Icons\de.png
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\View\Icons\en.png
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\View\Icons\TrashCan.png
-C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\Services\SQLite\Database\NoteDB.db
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\README.md
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\Services\LanguageFiles\Strings.de.resx
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\MVVM\Services\LanguageFiles\Strings.en.resx
@@ -40,15 +39,11 @@ C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\ricoa\source\ToDoApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.csproj.AssemblyReference.cache
-C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\AddNoteWindow.g.cs
-C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\NoteListWindow.g.cs
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp_Content.g.cs
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp_MarkupCompile.cache
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp_MarkupCompile.lref
-C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\AddNoteWindow.baml
-C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\NoteListWindow.baml
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.g.resources
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.MVVM.Services.LanguageFiles.Strings.de.resources
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.MVVM.Services.LanguageFiles.Strings.en.resources
@@ -66,3 +61,7 @@ C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\refint\ToDoApp.dll
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.pdb
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.genruntimeconfig.cache
 C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\ref\ToDoApp.dll
+C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\AddTaskWindow.g.cs
+C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\TaskListWindow.g.cs
+C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\AddTaskWindow.baml
+C:\Users\ricoa\source\ToDoApp\obj\Debug\net8.0-windows\MVVM\View\TaskListWindow.baml

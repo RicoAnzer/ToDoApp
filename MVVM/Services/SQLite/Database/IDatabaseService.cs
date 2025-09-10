@@ -9,11 +9,11 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
     {
         //Starting up Database, if it doesn't exist, create one
         void InitializeDatabase();
-        //Add Note to Database
+        //Add Task to Database
         void AddData(string description, string priority, string dueDate);
-        //Fill NoteList with data from Database
+        //Fill TaskList with data from Database
         void InitializeList();
-        //Remove Note from Database
+        //Remove Task from Database
         void RemoveData(int id);
     }
 }

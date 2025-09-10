@@ -1,5 +1,5 @@
 ﻿/**
-Languages Class for Note-App
+Languages Class for Task-App
 Languages can be switched using a comboBox
 Adding Languages is dynamically 
 => only adding new res file to LanguageFile folder and Icon of equal name to Icons folder necessary

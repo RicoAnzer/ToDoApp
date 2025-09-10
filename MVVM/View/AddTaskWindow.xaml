@@ -1,0 +1,157 @@
+﻿<Window x:Class="ToDoApp.MVVM.View.AddTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:services="clr-namespace:ToDoApp.MVVM.Services"
+        xmlns:local="clr-namespace:ToDoApp.MVVM.View"
+        xmlns:model="clr-namespace:ToDoApp.MVVM.Model"
+        xmlns:viewModel="clr-namespace:ToDoApp.MVVM.ViewModel"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="New task" Height="450" Width="385">
+
+
+    <Window.DataContext>
+        <viewModel:AddTaskViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="TextBox" x:Key="DynamicErrorSpace">
+            <Setter Property="Margin" Value="5,5,5,5"/>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="Margin" Value="{Binding TextBoxErrorMargin}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <LinearGradientBrush x:Key="TitleBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF386CC1" Offset="0"/>
+            <GradientStop Color="#FF669FFF" Offset="1"/>
+        </LinearGradientBrush>
+
+
+        <ControlTemplate x:Key="TextBoxValidationErrorTemplate" 
+                         TargetType="Control">
+            <StackPanel>
+                <Border BorderBrush="Red" 
+                        BorderThickness="1" 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch">
+                    <AdornedElementPlaceholder x:Name="errorMessage"/>
+                </Border>
+                <ItemsControl ItemsSource="{Binding ElementName=errorMessage, 
+                    Path=AdornedElement.(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}"
+                                       Foreground="Red"
+                                       FontSize="12"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid x:Name="AddTaskMenu"
+          Background="#FFBFBFBF">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="DescriptionWrapperRow" 
+                           Height="10*"></RowDefinition>
+            <RowDefinition x:Name="PrioAndDateRow" 
+                           Height="2*"></RowDefinition>
+            <RowDefinition x:Name="ButtonsRow" 
+                           Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="DescriptionWrapper" 
+              Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="DescHeaderRow"  Height="1*"></RowDefinition>
+                <RowDefinition x:Name="DescBoxRow" Height="8*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" 
+                        x:Name="DescriptionHeader"
+                        Background="{StaticResource TitleBackground}">
+                <Label Content="{Binding TaskDesc}" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,2.5,0,0" />
+            </StackPanel>
+            <TextBox x:Name="DescriptionBox" 
+                     Grid.Row="1" 
+                     Style="{StaticResource DynamicErrorSpace}"
+                     Text="{Binding TextBoxContent,
+                     Mode=TwoWay,
+                     UpdateSourceTrigger=PropertyChanged,
+                     ValidatesOnNotifyDataErrors=True,
+                     NotifyOnValidationError=True}"
+                     TextWrapping="Wrap"
+                     Validation.ErrorTemplate="{StaticResource TextBoxValidationErrorTemplate}"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="Prio"/>
+                <ColumnDefinition x:Name="Date" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="PrioSection" 
+                        Grid.Column="0">
+                <StackPanel x:Name="PriorityHeader" 
+                             Margin="0"
+                             Background="{StaticResource TitleBackground}">
+                    <Label Content="{Binding TaskPrio}" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <ComboBox x:Name="PriorityComboBox" 
+                          ItemsSource="{Binding Priorities}" 
+                          Text="{Binding Path=SelectedPriority, UpdateSourceTrigger=LostFocus, ValidatesOnDataErrors=True}" 
+                          VerticalAlignment="Center" 
+                          Margin="45,10,45,10">
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel x:Name="DateSection" 
+                        Grid.ColumnSpan="2" 
+                        HorizontalAlignment="Right" 
+                        Width="193">
+                <StackPanel x:Name="DateHeader"
+                            Background="{StaticResource TitleBackground}">
+                    <Label Content="{Binding TaskDate}" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <DatePicker x:Name="DatePicker" 
+                            SelectedDate="{Binding Path=CalendarDate, UpdateSourceTrigger=LostFocus}" 
+                            Margin="45,10,45,10"/>
+            </StackPanel>
+        </Grid>
+
+
+        <Grid x:Name="ButtonSection"
+              Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="SaveTaskSection"/>
+                <ColumnDefinition x:Name="CancelTaskSection"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" 
+                        Content="{Binding SaveTask}" 
+                        Command="{Binding AddTaskCommand}" 
+                        Padding="5" 
+                        Width="120" 
+                        Margin="0,15,0,15"/>
+            <Button Grid.Column="1" 
+                        Content="{Binding CancelTask}" 
+                        Command="{Binding CloseWindowCommand}"  
+                        Padding="5" 
+                        Width="120" 
+                        Margin="0,15,0,15"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
 /**
- Note Class for Note-App
+ Task Class for Task-App
 => Training Exercise
 Author: Rico Anzer
 */
@@ -15,7 +15,7 @@ namespace ToDoApp.MVVM.Model
         //Description for activity to do
         [ObservableProperty]
         private string? description;
-        //Date of creation of note
+        //Date of creation of Task
         [ObservableProperty]
         private string? date;
         //Priority (High, Medium, Low) for display in UI

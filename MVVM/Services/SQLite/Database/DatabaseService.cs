@@ -36,7 +36,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
         public DatabaseService()
         {
             Instance = this;
-            //Use same instance of LocalizationService as NoteListWIndow for same translations
+            //Use same instance of LocalizationService as TaskListWIndow for same translations
             _localizationService = new LocalizationService();
         }
 
@@ -51,7 +51,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
 
                 //Create table if it doesn't exist
                 string createTableCommand = "CREATE TABLE IF NOT " +
-                    "EXISTS Notes (" +
+                    "EXISTS Tasks (" +
                     "Description VARCHAR(2048) NOT NULL," +
                     "Priority VARCHAR(15) NOT NULL," +
                     "DueDate VARCHAR(15) NOT NULL" +
@@ -63,7 +63,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
             }
         }
 
-        //Add new note to database
+        //Add new Task to database
         public void AddData(string description, string priority, string date)
         {
             string newPrio = string.Empty;
@@ -92,7 +92,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                 insertCommand.Connection = db;
 
                 //Use parameterized query to prevent SQL injection attacks
-                insertCommand.CommandText = "INSERT INTO Notes (Description, Priority, DueDate) VALUES (@Desc, @Prio, @Date);";
+                insertCommand.CommandText = "INSERT INTO Tasks (Description, Priority, DueDate) VALUES (@Desc, @Prio, @Date);";
                 insertCommand.Parameters.AddWithValue("@Desc", description);
                 insertCommand.Parameters.AddWithValue("@Prio", newPrio);
                 insertCommand.Parameters.AddWithValue("@Date", date);
@@ -110,8 +110,8 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
             }
         }
 
-        //Rebuild NoteList with all notes in db
-        //=> Shows content of notes in UI
+        //Rebuild TaskList with all Tasks in db
+        //=> Shows content of Tasks in UI
         public void InitializeList()
         {
             using (var db = new SqliteConnection($"Filename={dbPath + @"\" + dbName}"))
@@ -121,11 +121,11 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
 
                 //Select table columns you want to extract information from
                 var selectCommand = new SqliteCommand
-                    ("SELECT rowid, * FROM Notes", db);
+                    ("SELECT rowid, * FROM Tasks", db);
 
                 SqliteDataReader query = selectCommand.ExecuteReader();
 
-                //For each entry, extract description, creationDate and priority and fill NoteList in NoteListWindowViewModel
+                //For each entry, extract description, creationDate and priority and fill TaskList in TaskListWindowViewModel
                 //query.GetString(0) = rowId,
                 //query.GetString(1) = description
                 //query.GetString(2) = priority
@@ -136,8 +136,8 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                     string priority = string.Empty;
                     int index = 0;
                     //Use placeholder of priority in AddData() for translation purposes
-                    //=> Allows translation of all Priorities in same language, regardless which language was used to write note
-                    //For example: If notes were written while English language was selected, once German is chosen,
+                    //=> Allows translation of all Priorities in same language, regardless which language was used to write Task
+                    //For example: If Tasks were written while English language was selected, once German is chosen,
                     //Priorities are getting translation in German as well
                     switch (query.GetString(2))
                     {
@@ -154,15 +154,15 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                             break;
                     }
 
-                    ObservableCollection<ToDo> noteList = NoteListWindowViewModel.Instance!.NoteList;
-                    //Create and add notes to list
-                    ToDo note = new ToDo(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
-                    noteList.Add(note);
+                    ObservableCollection<ToDo> TaskList = TaskListWindowViewModel.Instance!.TaskList;
+                    //Create and add Tasks to list
+                    ToDo Task = new ToDo(query.GetInt32(0), query.GetString(1), query.GetString(3), priority, index);
+                    TaskList.Add(Task);
                 }
             }
         }
 
-        //Remove Note from Database
+        //Remove Task from Database
         public void RemoveData(int id)
         {
             //Connect to database, create database if it doesn't exist
@@ -171,7 +171,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                 //Open database
                 db.Open();
 
-                //1. Delete Note
+                //1. Delete Task
                 //2. Copy Database => New Database has realigned rowid
                 //3. Delete old Database
                 //4. Change name of new Database to name of old Database
@@ -186,13 +186,13 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                 renameTableCommand.Connection = db;
 
                 //Use parameterized query to prevent SQL injection attacks
-                deleteCommand.CommandText = "DELETE FROM Notes WHERE rowid = @ID;";
+                deleteCommand.CommandText = "DELETE FROM Tasks WHERE rowid = @ID;";
                 deleteCommand.Parameters.AddWithValue("@ID", id);
 
-                //Recreate Table Notes to reset rowids
-                createNewTableCommand.CommandText = "CREATE TABLE newNotes AS SELECT * FROM Notes;";
-                dropOldTableCommand.CommandText = "DROP TABLE NOTES;";
-                renameTableCommand.CommandText = "ALTER TABLE newNotes RENAME TO Notes;";
+                //Recreate Table Tasks to reset rowids
+                createNewTableCommand.CommandText = "CREATE TABLE newTasks AS SELECT * FROM Tasks;";
+                dropOldTableCommand.CommandText = "DROP TABLE TaskS;";
+                renameTableCommand.CommandText = "ALTER TABLE newTasks RENAME TO Tasks;";
 
                 deleteCommand.ExecuteReader();
                 createNewTableCommand.ExecuteReader();
@@ -216,7 +216,7 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
                 editCommand.Connection = db;
 
                 //Use parameterized query to prevent SQL injection attacks
-                editCommand.CommandText = "UPDATE Notes SET Description = @Desc WHERE rowid = @ID;";
+                editCommand.CommandText = "UPDATE Tasks SET Description = @Desc WHERE rowid = @ID;";
                 editCommand.Parameters.AddWithValue("@ID", id);
                 editCommand.Parameters.AddWithValue("@Desc", description);
 
@@ -224,13 +224,13 @@ namespace ToDoApp.MVVM.Services.SQLite.Database
             }
         }
 
-        //Recreates noteList to update notes, if their content changed
+        //Recreates TaskList to update Tasks, if their content changed
         public void updateList()
         {
-            ObservableCollection<ToDo> noteList = NoteListWindowViewModel.Instance!.NoteList;
+            ObservableCollection<ToDo> TaskList = TaskListWindowViewModel.Instance!.TaskList;
             //Delete old information
-            noteList.Clear();
-            //Recreate NoteList with updated information of notes
+            TaskList.Clear();
+            //Recreate TaskList with updated information of Tasks
             InitializeList();
         }
     }

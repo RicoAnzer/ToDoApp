@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="MVVM\Services\SQLite\Database\NoteDB.db" />
+    <None Remove="MVVM\Services\SQLite\Database\TaskDB.db" />
     <None Remove="MVVM\View\Icons\de.png" />
     <None Remove="MVVM\View\Icons\en.png" />
     <None Remove="MVVM\View\Icons\TrashCan.png" />
@@ -22,7 +22,7 @@
 </ItemGroup>
 
 <ItemGroup>
-	<Page Update="MVVM\View\NoteListWindow.xaml">
+	<Page Update="MVVM\View\TaskListWindow.xaml">
 		<CopyToOutputDirectory></CopyToOutputDirectory>
 	</Page>
 </ItemGroup>
@@ -40,9 +40,6 @@
 </ItemGroup>
 
 <ItemGroup>
-  <EmbeddedResource Include="MVVM\Services\SQLite\Database\NoteDB.db">
-    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </EmbeddedResource>
   <EmbeddedResource Include="README.md">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </EmbeddedResource>
