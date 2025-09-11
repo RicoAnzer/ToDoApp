@@ -9,7 +9,7 @@
       "ToDoApp/1.0.0": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.4.0",
-          "Microsoft.Data.Sqlite": "9.0.6"
+          "Microsoft.Data.Sqlite": "9.0.9"
         },
         "runtime": {
           "ToDoApp.dll": {}
@@ -31,21 +31,21 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite/9.0.6": {
+      "Microsoft.Data.Sqlite/9.0.9": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "9.0.6",
+          "Microsoft.Data.Sqlite.Core": "9.0.9",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.10",
           "SQLitePCLRaw.core": "2.1.10"
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.6": {
+      "Microsoft.Data.Sqlite.Core/9.0.9": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "9.0.6.0",
-            "fileVersion": "9.0.625.26607"
+            "assemblyVersion": "9.0.9.0",
+            "fileVersion": "9.0.925.41909"
           }
         }
       },
@@ -208,19 +208,19 @@
       "path": "communitytoolkit.mvvm/8.4.0",
       "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite/9.0.6": {
+    "Microsoft.Data.Sqlite/9.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JtLL15uSBqqkDs6mhRc4rUbNPaJJCgN+gGQfLs+paD600td6V6YGgOreXWWoIKdq2eyRipggSJnE/eM5PlxYVA==",
-      "path": "microsoft.data.sqlite/9.0.6",
-      "hashPath": "microsoft.data.sqlite.9.0.6.nupkg.sha512"
+      "sha512": "sha512-23V9T+bci2R6YZ48PkXH84ceCVY0K+4CnkUuD/jMQmP7ZCg2n0ZC/G+ATl8MNV0OeVE6+2+gCaY3BeNSotbObg==",
+      "path": "microsoft.data.sqlite/9.0.9",
+      "hashPath": "microsoft.data.sqlite.9.0.9.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/9.0.6": {
+    "Microsoft.Data.Sqlite.Core/9.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3auiudiViGzj1TidUdjuDqtP3+f6PBk4xdw6r9sBaTtkYoGc3AZn0cP8LgYZaLRnJBqY5bXRLB+qhjoB+iATzA==",
-      "path": "microsoft.data.sqlite.core/9.0.6",
-      "hashPath": "microsoft.data.sqlite.core.9.0.6.nupkg.sha512"
+      "sha512": "sha512-DjxZRueHp0qvZxhvW+H1IWYkSofZI8Chg710KYJjNP/6S4q3rt97pvR8AHOompkSwaN92VLKz5uw01iUt85cMg==",
+      "path": "microsoft.data.sqlite.core/9.0.9",
+      "hashPath": "microsoft.data.sqlite.core.9.0.9.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "type": "package",

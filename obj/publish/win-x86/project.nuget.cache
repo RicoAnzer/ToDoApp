@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1CgCiirG7NQ=",
+  "dgSpecHash": "UA/4zu37/7k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricoa\\source\\NoteApp\\NoteApp.csproj",
+  "projectFilePath": "C:\\Users\\ricoa\\source\\ToDoApp\\ToDoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricoa\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\ricoa\\.nuget\\packages\\microsoft.data.sqlite\\9.0.6\\microsoft.data.sqlite.9.0.6.nupkg.sha512",

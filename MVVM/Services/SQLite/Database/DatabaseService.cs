@@ -4,7 +4,6 @@ using ToDoApp.MVVM.ViewModel;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 
 /**
