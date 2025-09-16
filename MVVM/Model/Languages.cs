@@ -1,4 +1,7 @@
-﻿/**
+﻿
+using CommunityToolkit.Mvvm.ComponentModel;
+
+/**
 Languages Class for Task-App
 Languages can be switched using a comboBox
 Adding Languages is dynamically 
@@ -9,10 +12,12 @@ Author: Rico Anzer
 */
 namespace ToDoApp.MVVM.Model
 {
-    public partial class Languages
+    public partial class Languages: ObservableObject
     {
-        public string Lang { get; set; }
-        public string IconPath { get; set; }
+        [ObservableProperty]
+        private string lang;
+        [ObservableProperty]
+        private string iconPath;
         public Languages(string lang, string iconPath)
         {
             this.Lang = lang;

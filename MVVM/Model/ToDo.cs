@@ -14,19 +14,19 @@ namespace ToDoApp.MVVM.Model
         private int id;
         //Description for activity to do
         [ObservableProperty]
-        private string? description;
+        private string description;
         //Date of creation of Task
         [ObservableProperty]
-        private string? date;
+        private string date;
         //Priority (High, Medium, Low) for display in UI
         [ObservableProperty]
-        string priority;
+        private string priority;
         //Index of above priority (High - 0, Medium - 1, Low - 2) for sorting
         [ObservableProperty]
-        int priorityIndex;
+        private int priorityIndex;
 
         //Constructor
-        public ToDo(int _id, string? _description, string _date, string _priority, int _priorityIndex)
+        public ToDo(int _id, string _description, string _date, string _priority, int _priorityIndex)
         {
             Id = _id;
             Description = _description;

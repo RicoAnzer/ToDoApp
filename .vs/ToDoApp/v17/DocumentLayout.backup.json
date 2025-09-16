@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ricoa\\source\\ToDoApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\windowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\windowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\localizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\localizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\sqlite\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\sqlite\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\sqlite\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\todoapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -19,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\sqlite\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\sqlite\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\iwindowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\iwindowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\view\\addtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -70,26 +90,6 @@
       "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\languagefiles\\strings.de.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\windowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\windowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\services\\localizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\services\\localizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|c:\\users\\ricoa\\source\\todoapp\\mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E1FC31A-B2B1-B8B9-4A0A-B10C59FB9880}|ToDoApp.csproj|solutionrelative:mvvm\\model\\languages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\7df9853317a222a2c3aca718c5a2c24d22bbe3c8d3e4f82866cb1b8bc00db44a\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 249,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -127,19 +127,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IWindowService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\IWindowService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\IWindowService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\IWindowService.cs",
-              "RelativeToolTip": "MVVM\\Services\\IWindowService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T14:08:41.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "IDatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\IDatabaseService.cs",
@@ -152,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\SQLite\\Database\\DatabaseService.cs",
@@ -165,224 +152,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-08-05T13:38:42.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ToDoApp.csproj",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\ToDoApp.csproj",
-              "RelativeDocumentMoniker": "ToDoApp.csproj",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\ToDoApp.csproj",
-              "RelativeToolTip": "ToDoApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-10T09:13:15.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\README.md",
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2025-08-17T13:23:28.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Languages.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\Languages.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\Languages.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\Languages.cs",
+              "RelativeToolTip": "MVVM\\Model\\Languages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T13:43:52.488Z",
+              "WhenOpened": "2025-08-14T13:22:04.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:43:48.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TaskListWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\TaskListWindow.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\TaskListWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-05T13:42:26.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddTaskWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\AddTaskWindow.xaml",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\AddTaskWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T12:50:22.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddTaskViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\AddTaskViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\AddTaskViewModel.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\AddTaskViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\AddTaskViewModel.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAswGkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T12:51:39.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TaskListWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\TaskListWindowViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\TaskListWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\TaskListWindowViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\TaskListWindowViewModel.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwFgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:07:05.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T13:43:49.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ResourcePart.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "ToolTip": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAnwCcAAAAEAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T12:44:35.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TaskListWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\View\\TaskListWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml.cs",
-              "RelativeToolTip": "MVVM\\View\\TaskListWindow.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAADwv1cAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:25:19.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddTaskWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\View\\AddTaskWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml.cs",
-              "RelativeToolTip": "MVVM\\View\\AddTaskWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T13:26:36.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ILocalizationService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\ILocalizationService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\ILocalizationService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\ILocalizationService.cs",
-              "RelativeToolTip": "MVVM\\Services\\ILocalizationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T14:09:05.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Strings.de.resx",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
-              "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
-              "RelativeToolTip": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-08-05T13:30:54.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "ToDo.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\ToDo.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\ToDo.cs",
               "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\ToDo.cs",
               "RelativeToolTip": "MVVM\\Model\\ToDo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T13:22:13.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "WindowService.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\WindowService.cs",
-              "RelativeDocumentMoniker": "MVVM\\Services\\WindowService.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\WindowService.cs",
-              "RelativeToolTip": "MVVM\\Services\\WindowService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ILocalizationService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\ILocalizationService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\ILocalizationService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\ILocalizationService.cs",
+              "RelativeToolTip": "MVVM\\Services\\ILocalizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T13:51:24.997Z",
+              "WhenOpened": "2025-08-05T14:09:05.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "LocalizationService.cs",
               "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LocalizationService.cs",
               "RelativeDocumentMoniker": "MVVM\\Services\\LocalizationService.cs",
@@ -395,16 +217,180 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Languages.cs",
-              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\Languages.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\Languages.cs",
-              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Model\\Languages.cs",
-              "RelativeToolTip": "MVVM\\Model\\Languages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "WindowService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\WindowService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\WindowService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\WindowService.cs",
+              "RelativeToolTip": "MVVM\\Services\\WindowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T13:22:04.276Z",
+              "WhenOpened": "2025-08-05T13:51:24.997Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-05T13:43:48.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T13:43:52.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ToDoApp.csproj",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\ToDoApp.csproj",
+              "RelativeDocumentMoniker": "ToDoApp.csproj",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\ToDoApp.csproj",
+              "RelativeToolTip": "ToDoApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-10T09:13:15.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-05T13:38:42.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IWindowService.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\IWindowService.cs",
+              "RelativeDocumentMoniker": "MVVM\\Services\\IWindowService.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\IWindowService.cs",
+              "RelativeToolTip": "MVVM\\Services\\IWindowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T14:08:41.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TaskListWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\TaskListWindow.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml",
+              "RelativeToolTip": "MVVM\\View\\TaskListWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-05T13:42:26.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddTaskWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\AddTaskWindow.xaml",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml",
+              "RelativeToolTip": "MVVM\\View\\AddTaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-31T12:50:22.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddTaskViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\AddTaskViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\AddTaskViewModel.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\AddTaskViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\AddTaskViewModel.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswGkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T12:51:39.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TaskListWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\TaskListWindowViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\TaskListWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\ViewModel\\TaskListWindowViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\TaskListWindowViewModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwFgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T13:07:05.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T13:43:49.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\ricoa\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAnwCcAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:44:35.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TaskListWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\TaskListWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\TaskListWindow.xaml.cs",
+              "RelativeToolTip": "MVVM\\View\\TaskListWindow.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv1cAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:25:19.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddTaskWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\AddTaskWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\View\\AddTaskWindow.xaml.cs",
+              "RelativeToolTip": "MVVM\\View\\AddTaskWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:26:36.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Strings.de.resx",
+              "DocumentMoniker": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "RelativeDocumentMoniker": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "RelativeToolTip": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-08-05T13:30:54.119Z"
             },
             {
               "$type": "Document",
@@ -416,8 +402,7 @@
               "RelativeToolTip": "MVVM\\Services\\LanguageFiles\\Strings.de.resx",
               "ViewState": "AgIAACoAAAAAAAAAAAAcwD0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-08-26T08:24:28.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T08:24:28.277Z"
             },
             {
               "$type": "Document",
@@ -451,8 +436,7 @@
               "ToolTip": "C:\\Users\\ricoa\\source\\ToDoApp\\MVVM\\Services\\LanguageFiles\\Strings.en.resx",
               "RelativeToolTip": "MVVM\\Services\\LanguageFiles\\Strings.en.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-08-12T13:28:31.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T13:28:31.975Z"
             },
             {
               "$type": "Document",
