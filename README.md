@@ -14,5 +14,6 @@
 - Change languages between German and English
 
 ### Download release, unpack and open ToDoApp.exe file in main directory to start the program ###
+<br>
 
   <img width="773" height="430" alt="Image" src="https://github.com/user-attachments/assets/f8f78ed1-11bb-4ea3-b9b8-34aa7b826ce1" />
